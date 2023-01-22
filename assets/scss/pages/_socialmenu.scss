@@ -1,0 +1,88 @@
+.social{
+        position: fixed;
+        top: 65%;
+        right: 0%;
+        transform: translateX(-42px);
+        z-index: 4;
+    ul li{
+        
+        margin-bottom: 30px;
+        position: relative;
+        &:hover {
+            .socialList{
+                width: 300px;
+                transition: 0.5s ease-in-out;
+                right: 30px;
+                opacity: 1;
+            }
+            a{ 
+                box-shadow: 0px 20px 40px 10px rgba(56, 52, 52, 0.1);
+                svg path{
+                    fill: $black;
+                }
+        }
+        
+        }
+        & > p{
+            z-index: 3;
+            cursor: pointer;
+        }
+        &:last-child{
+            margin-bottom: 0;
+     
+        }
+    }
+    svg{
+        background-color: $btnColor;
+        width: 60px;
+        height: 70px;
+        border-radius: 20px;
+        mix-blend-mode: normal;
+        box-shadow: 0px 20px 40px 10px rgba(56, 52, 52, 0.2);
+        padding: 17px 13px;
+
+    }
+    .slideLeft{ 
+        .socialList{
+            transition: 0.5s ease-in-out;
+            opacity: 0;
+            display: flex;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $btnColor;
+            height: 70px;
+            width: 0;
+            right: 0;
+            border-radius: 20px;
+            align-items: center;
+            padding: 0px 20px 0px 16px;
+            box-shadow: 0px 20px 40px 10px rgba(56, 52, 52, 0.2);
+            z-index: -1;
+            overflow: hidden;
+
+            a{
+                margin-right: 20px;
+                &:hover{
+                    i{
+                        color: $black;
+                    }
+                }
+            }
+            
+            
+        }
+        i{
+            font-size: 25px;
+            color: $white;
+        }
+        span.textRight {
+            text-align: center;
+            width: 100%;
+            color: $white;
+        }
+    }
+    @include max(768){
+        display: none;
+    }
+}

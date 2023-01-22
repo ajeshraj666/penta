@@ -1,0 +1,873 @@
+body{
+	font-family: $primary-font;
+	font-weight:$fw-500;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+
+
+.about-penta{
+	padding: 260px 0px 0px 0px;
+	position: relative;
+	@include max(1600){
+	padding: 160px 0px 0px 15px;
+	}
+	@include max(991){
+		padding: 180px 0px 0px 0px;
+
+	}
+		.container >.row{
+			@include max(767){
+				flex-direction: column-reverse;
+			}
+		}
+	ul.about-list{
+		column-count: 2;
+		width: 792px;
+		position: absolute;
+		left: 63px;
+
+		@include max(1600){
+			width: 712px;
+			left: 43px;
+		}
+		@include max(1440){
+			width: 40%;
+		}
+		@include max(1199){
+			column-count: 1;
+		}
+		@include max(768){
+			width: 25%;
+			left: 30px;
+		}
+		@include max(767){
+			width: 100%;
+			position: initial;
+			column-count: 2;
+			height: auto;
+		}
+		li{
+			display: flex;
+			margin-bottom: 20px;
+			&:nth-child(1) img,&:nth-child(2) img{
+				@include min(1200){
+					height: 442px;
+				}
+			}
+			&:nth-child(3) img{
+				@include min(1200){
+					height: 725px;
+				}
+			}
+		}
+		img{
+			width: 100%;
+			border-radius: 30px;
+			object-fit: cover;
+			@include max(1199){
+				height: 280px;
+				object-position: center;
+			}
+			@include max(768){
+				height: 285px;
+			}
+			@include max(767){
+			 height: 200px;
+			 border-radius: 20px;
+			}
+		}
+		p{
+			font-size: 30px;
+			line-height: 40px;
+			text-align: center;
+			background-color: $primaryColor;
+			background-image: url(/assets/images/vector/btn-bg.png);
+			background-size: cover;
+			color: $white;
+			padding: 24px 69px 33px 105px;
+			width: 400px;
+			height: 165px;
+			border-radius: 30px;
+			z-index: 1;
+			position: relative;
+			&::after{
+				@extend .round;
+				background-color: #4AAD97;
+				z-index: -1;
+				top: 24px;
+				right: 62px;
+			}
+			@include max(1600){
+				width: 100%;
+			}
+			@include max(1440){
+				padding: 24px 20px 24px 20px;
+			}
+			@include max(768){
+				@include fontSize(20px);
+				height:auto;
+			}
+			@include max(767){
+				@include fontSize(25px);
+				height: 200px;
+				padding: 50px 0px;
+				border-radius: 20px;
+			}
+		}
+		span{
+			@include fontSize(70px);
+			line-height: 40px;
+			display: block;
+			margin-top: 20px;
+			letter-spacing: 0.1em;
+			z-index: 1;
+			@include max(1440){
+				@include fontSize(60px);
+			line-height: 30px;
+			}
+			@include max(768){
+				@include fontSize(30px)
+			}
+			@include max(767){
+				@include fontSize(35px)
+			}
+			sup{
+				position: absolute;
+				top: 90px;
+				font-size: 45px;
+				@include max(767){
+					top: 105px;
+					font-size: 35px;
+
+				}
+			}
+		}
+	}
+}
+	.shortTitle{
+		@include fontSize(20px);
+		line-height: 20px;
+		color: $secondaryColor;
+		display: block;
+		padding-bottom: 20px;
+		@include max(767){
+			@include fontSize(16px);
+			padding-bottom: 5px;
+		}
+	}
+
+.about-content{
+	
+    width: 82%;
+    margin-left: auto;
+	@include max(1440){
+		width: 95%;
+	}
+	@include max(768){
+		width: 70%;
+	}
+	@include max(767){
+		width: 100%;
+		margin: 290px 0px 30px 0px;
+	}
+	h2{
+		line-height: 40px;
+		color: $blackColor;
+		padding-bottom: 30px;
+		@include max(767){
+			padding-bottom: 0;
+		}
+	}
+	p{
+		font-size: 24px;
+		line-height: 40px;
+		color: $btnColor;
+		padding-bottom: 10px;
+	}
+	article{
+		background: #F9F9F9;
+		border: 1px solid #EEEEEE;
+		box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.05);
+		border-radius: 30px;
+		width: 340px;
+		height: 153px;
+		@include fontSize(24px);
+		line-height: 40px;
+		padding: 40px 32px 40px 71px;
+		position: relative;
+		z-index: 1;
+		&::after{
+			@extend .round;
+			background-color: #C0DED7;
+			top: 14px;
+			left: 32px;
+			z-index: -1;
+			@include max(767){
+				left: 5px;
+			}
+		}
+		@include max(1440){
+			width: 100%;
+			height: 123px;
+			padding: 20px 20px 20px 20px;
+			display: flex;
+			align-items: center;
+		}
+		@include max(768){
+			@include fontSize(20px);
+			line-height: 30px;
+		}
+		@include max(767){
+			@include fontSize(15px);
+			line-height: 25px;
+			padding: 20px 10px 20px 10px;
+			height: 100px;
+		}
+	}
+	.grey-text{
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 40px;
+		color:$greyColor;
+		padding:50px 0px 35px 0px;
+		@include max(1440){
+			padding: 20px 20px 20px 20px;
+		}
+		@include max(767){
+			padding: 20px 0px 20px 0px;
+		}
+		
+	}
+}
+.round{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	content: '';
+	position: absolute;
+	@include max(767){
+		width: 80px;
+		height: 80px;
+	}
+}
+.clients{
+	margin-top: 150px;
+	background-color: $darkBlueColor;
+	background-image: url(/assets/images/vector/client.png);
+	position: relative;
+	@include max(991){
+		margin-top:50px;
+	}
+	.row{
+		height: 726px;
+		align-items: center;
+		@include max(1600){
+			height: 666px;
+		}
+		@include max(1440){
+			height: 550px;
+		}
+		@include max(1199){
+			height:430px;
+		}
+		@include max(991){
+			height:auto;
+			padding: 30px 0px;
+		}
+	}
+	span{
+		@extend .shortTitle;
+	}
+	h2{
+		color: $white;
+		margin-bottom: 45px;
+		@include max(1199){
+			margin-bottom: 25px;
+		}
+	}
+	ul{
+		display:flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	li{
+		max-width: 20%;
+		flex-basis: 20%;
+		padding-bottom: 25px;
+		@include max(1440){
+			padding-bottom: 0;
+		}
+		@include max(1199){
+			padding-bottom: 15px;
+			display: flex;
+
+		}
+		@include max(991){
+			padding-bottom:10px;
+
+		}
+		@include max(767){
+			padding-bottom:15px;
+
+		}
+		img{
+			@include max(1199){
+				width: 80px;
+				height: auto;
+				object-fit: cover;
+			}
+			@include max(991){
+				width: 130px;
+			}
+			@include max(767){
+				width: 60px;
+				margin: auto;
+			
+			}
+		}
+	}
+	figure{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		@include max(1440){
+			width: 35%;
+		}@include max(1440){
+			width: 35%;
+		}
+		@include max(991){
+			width: 70%;
+			position: initial;
+			margin: auto;
+			transform: translateY(0%);
+			margin-top: 20px;
+		}
+	}
+	.icon-box{
+		position: absolute;
+		width: 170px;
+		height: 170.94px;
+		background-color: $primaryColor;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		z-index: 2;
+		border-radius: 30px;
+		left: -70px;
+		top: 45px;
+		@include max(1440){
+			width: 150px;
+			height: 150px;
+		}
+		@include max(1199){
+			width: 110px;
+			height: 110px;
+		}
+		@include max(991){
+			border-radius: 20px;
+		}
+		@include max(767){
+			width: 70px;
+			height: 70px;
+			left: -40px;
+			border-radius: 10px;
+
+		}
+		img{
+			width: 60px;
+			height: 60px;
+			@include max(1199){
+				width: 40px;
+				height: 40px;
+			}
+			@include max(767){
+				width: 30px;
+			    height: 30px;
+			}
+		}
+		p{
+			font-size: 20px;
+			line-height: 40px;
+			color: $white;
+			font-weight: 400;
+			padding-top: 10px;
+			@include max(1199){
+				font-size: 16px;
+				line-height: 22px;
+				padding-top: 5px;
+			}
+			@include max(767){
+				font-size: 12px;
+				line-height: 24px;
+				padding-top: 0px;
+			}
+		}
+	}
+	article{
+		width: 93.5%;
+		@include max(1600){
+			width: 80%;
+    		padding-left: 38px;
+		}
+		@include max(1440){
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+}
+.positionbefor{
+	content: '';
+	position: absolute;
+
+}
+
+
+
+
+.counter { 
+	position: relative;
+	&> figure{
+		img{
+			mix-blend-mode: luminosity;
+			width: 100%;
+			@include max(767){
+				height: 350px;
+				object-fit: cover;
+			}
+			@include max(576){
+				height: 370px;
+			}
+		}
+	}
+	.counter-outer{
+		position: absolute;
+		top: 56%;
+		z-index: 2;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		@include max(767){
+			top: 50%;
+    transform: translate(-50%, -50%);
+		}
+	}
+	.row >{
+		div{
+			&:first-child{
+				padding-left: 0;
+				@include max(767){
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+}
+.counter-wrap{
+	width: 391px;
+	height: 310px;
+	margin: auto;
+	background-color: $primaryColor;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	padding: 0px 35px 0px 35px;
+	box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.15);
+	position: relative;
+	@include max(1600){
+		width: 351px;
+		height: 270px;
+	}
+	@include max(1499){
+		width: 291px;
+		height: 200px;
+	}
+	@include max(1199){
+		width: 231px;
+		height: 160px;
+		padding: 0px 15px 0px 15px;
+	}
+	@include max(991){
+		width: 171px;
+		height: 150px;
+		flex-wrap: wrap;
+		padding: 5px 15px 5px 15px;
+	}
+	@include max(767){
+		margin: 10px auto;
+		width: 250px;
+		height: 150px;
+	}
+	@include max(567){
+			width:160px;
+		height: 160px;
+	}
+	@include max(380){
+		width: 150px;
+   		 height: 150px;
+	}
+	@include max(360){
+		width: 120px;
+   		 height: 160px;
+		 
+	}
+	
+	&::after{
+		@extend .positionbefor;
+		background-image: url(/assets/images/shapes/countershape.svg);
+		background-size: cover;
+		width: 313.07px;
+		height: 300px;
+		z-index: 0;
+		left: 0;
+		top: 0;
+		@include max(1600){
+			width: 273.07px;
+			height: 260px;
+		}
+		@include max(1499){
+			width: 203.07px;
+    		height: 194px;
+		}
+		@include max(1199){
+			width: 161.07px;
+    		height: 154px;
+		}
+		@include max(991){
+			width: 147.07px;
+    		height: 140px;
+		}
+		@include max(360){
+				width: 111.07px;
+				height: 106px;
+		}
+	}
+
+	p{
+		@include fontSize(70px);
+		line-height:40px;
+		color: $white;
+		position: relative;
+		@include max(1499){
+			@include fontSize(50px);
+			line-height:20px;
+
+		}
+		@include max(991){
+			@include fontSize(30px);
+			line-height:15px;
+
+		}
+		&:first-child{
+			padding-bottom: 16px;
+			@include max(1600){
+				padding-bottom: 0;
+			}
+ 		}
+		&:nth-child(2){
+			@include fontSize(30px);
+			line-height: 40px;
+			font-weight: 400;
+			@include max(1499){
+				@include fontSize(25px);
+				line-height: 35px;
+			}
+			@include max(1199){
+				@include fontSize(20px);
+				line-height: 30px;
+			}
+			@include max(992){
+				@include fontSize(18px);
+				line-height: 24px;
+			}
+			@include max(767){
+				@include fontSize(16px);
+				line-height: 22px;
+			}
+		}
+		sup{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			@include fontSize(73px);
+			@include max(1499){
+				@include fontSize(43px);
+				top: 40%;
+			}
+			@include max(991){
+				@include fontSize(25px);
+			}
+		}
+	}
+	figure{
+			flex-basis: 50%;
+			max-width: 50%;
+			position: relative;
+			z-index: 1;
+			@include max(991){
+				flex-basis: 100%;
+				max-width: 100%;
+			}
+			&::before{
+				@extend .round;
+				background-color: $secondaryColor;
+				z-index: 2;
+				@include max(1499){
+					width: 80px;
+					height: 80px;
+				}
+				@include max(991){
+					width: 50px;
+					height: 50px;
+				}
+			}
+			img{
+				@include max(1499){
+					width: 80px;
+					height: 80px;
+				}
+				@include max(991){
+					width: 50px;
+					height: 50px;
+				}
+			}
+	}
+	article{
+		flex-basis: 50%;
+		max-width: 50%;
+		z-index: 1;
+		@include max(991){
+			flex-basis: 100%;
+			max-width: 100%;			
+		}
+	}
+	
+}
+
+.our-services{
+	@include max(991){
+		padding: 110px 0px 0px 0px;
+	}
+	.container > .row{
+		@include max(767){
+			flex-direction: column;
+		}
+	}
+	@include max(767){
+		padding-top: 50px;
+	}
+	.service-col {
+		flex-basis: 51%;
+		max-width: 51%;
+		@include max(767){
+			flex-basis: 100%;
+			max-width: 100%;
+		}
+	}
+	.service-col-two {
+		flex-basis: 49%;
+		max-width: 49%;
+		@include max(767){
+			flex-basis: 100%;
+			max-width: 100%;
+		}
+	}
+	.about-content{
+		width: 100%;
+		@include max(767){
+			margin-top: 0;
+		}
+	}
+	 .grey-text {
+		padding: 28px 0px 40px 0px;
+		@include max(1499){
+			padding: 10px 0px 10px 0px;
+		}
+	}
+	article{
+		margin: auto;
+		margin-bottom: 60px;
+		border: 1px solid #EEEEEE;
+		border-radius: 30px;
+		box-shadow: 0px 40px 18px rgba(0, 0, 0, 0.05);
+		background-color: $white;
+		width: 380px;
+		height: 230px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		@include max(1600){
+			width: 360px;
+		}
+		@include max(1499){
+			width: 270px;
+		}
+		@include max(767){
+			width: 80%;
+			height: 180px;
+		}
+		p{
+			font-size: 24px;
+			line-height: 40px;
+			color: $blackColor;
+			margin-top: 20px;
+		}
+		img{
+			@include max(767){
+				width: 20%;
+			}
+
+		}
+	}
+	
+ ul.slick-dots {
+    text-align: left;
+    margin-left: 20px;
+	position: absolute;
+	@include max(1199){
+		margin-left: 0;
+		text-align: center;
+	}
+	}
+
+}
+
+
+.case-studies{
+	padding: 150px 0px 60px 0px;
+	background-color: $darkBlueColor;
+	color: $white;
+	margin-top: 150px;
+	position: relative;
+	&::before{
+		@extend .positionbefor;
+		width: 990.98px; height: 1011.67px;
+		background-image: url(/assets/images/shapes/case.svg);
+		background-size: cover;
+		top: 0;
+		z-index: 0;
+		@include max(1600){
+			width: 890.98px;
+			height: 911.67px;
+		}
+	}
+	.row >{
+		div{
+			text-align: center;
+			padding-bottom: 72px;
+		}
+	}
+	h2{
+		text-transform: uppercase;
+	}
+	.slick-dots li button:before{
+		background-color: $primaryColor;
+	}
+	.slick-dots li.slick-active button:before{
+		background-color: $white;
+	}
+}
+.case-content{
+	text-align: left;
+	z-index: 2;
+	position: relative;
+	p{
+		span{
+			font-size: 24px;
+			line-height: 40px;
+			padding-bottom: 20px;
+			display: block;
+		}
+		&.discription{
+			font-size: 20px;
+			line-height: 40px;
+			padding-top: 20px;
+			color: #CCCCCC;
+		}
+	}
+	ul{
+		li{
+			font-size: 20px;
+			line-height: 40px;
+			img{
+				padding-right: 38px;
+			}
+			&:first-child{
+				padding-bottom: 15px;
+			}
+		}
+	}
+
+	&> a{display: block;}
+	.btnpenta{
+		margin-top: 104px;
+	}
+}
+.case-slider{
+	width: 84%;
+	.slick-dots{
+		bottom: 0;
+		left: -70px;
+	}
+	.slick-slide {
+		figure{
+			transform: scale(.8);
+			left: -23%;
+			z-index: -1;
+			transition: 0.5s ease all;
+			&:after {
+				background-color: #ffffff91;
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: -80%;
+				z-index: 9;
+				border-radius: 30px;
+			}
+		}
+		img{
+			left: -80%;
+			filter: grayscale(100);
+		}
+	}
+	.slick-slide.slick-current {
+		figure{
+			transform: scale(1);
+			z-index: 1;
+			transition: 0.5s ease all;
+			left: -16px;
+			&::after{
+				background: unset;
+				position: initial;
+			}
+		}
+		img{
+			left: -11%;
+			z-index: 1;
+			position: relative;
+			filter: grayscale(0);
+		}
+	}
+	figure{
+		position: relative;
+
+		img{
+			border-radius: 30px;
+			width: 609px;
+			height: 580px;
+			padding: 15px;
+			background-color: $white;
+
+		}
+
+	}
+}
