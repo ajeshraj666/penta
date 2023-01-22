@@ -114,7 +114,7 @@
 		&::before{
 			position: absolute;
 			content: '';
-			background-image: url(/assets/images/shapes/banner-before.png);
+			background-image: url(./assets/images/shapes/banner-before.png);
 			background-size: cover;
 			width: 757px;
    			 height: 762px;
@@ -181,7 +181,7 @@
 		&::after{
 			position: absolute;
 			content: '';
-			background-image: url(/assets/images/shapes/banner-after.png);
+			background-image: url(./assets/images/shapes/banner-after.png);
 			background-size: cover;
 			width: 274px;
 			height:597px;

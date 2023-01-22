@@ -104,13 +104,13 @@ header{
 					&:nth-child(1) a:before{
 						width: 25px;
 						height: 25px;
-						background-image: url(/assets/images/icons/portfolio.svg);
+						background-image: url(./assets/images/icons/portfolio.svg);
 					}
 					&:nth-child(2) a:before{
 						width: 30px;
 						height: 30px;
 						left: -40px;
-						background-image: url(/assets/images/icons/services.svg);
+						background-image: url(./assets/images/icons/services.svg);
 					}
 					&:nth-child(3),&:nth-child(4){
 						padding-right: 25px;
@@ -122,7 +122,7 @@ header{
 						width: 29px;
 						left: -40px;
 						height: 25px;
-						background-image: url(/assets/images/icons/contact.svg);
+						background-image: url(./assets/images/icons/contact.svg);
 					}
 					&:last-child{
 						padding-right: 0;

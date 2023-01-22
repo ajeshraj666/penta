@@ -3428,7 +3428,7 @@ nav ul.meu-primary {
   nav ul.meu-primary li:nth-child(1) a:before {
     width: 25px;
     height: 25px;
-    background-image: url(/assets/images/icons/portfolio.svg);
+    background-image: url(./assets/images/icons/portfolio.svg);
   }
 }
 @media (min-width: 1025px) {
@@ -3436,7 +3436,7 @@ nav ul.meu-primary {
     width: 30px;
     height: 30px;
     left: -40px;
-    background-image: url(/assets/images/icons/services.svg);
+    background-image: url(./assets/images/icons/services.svg);
   }
 }
 @media (min-width: 1025px) {
@@ -3454,7 +3454,7 @@ nav ul.meu-primary {
     width: 29px;
     left: -40px;
     height: 25px;
-    background-image: url(/assets/images/icons/contact.svg);
+    background-image: url(./assets/images/icons/contact.svg);
   }
 }
 @media (min-width: 1025px) {
@@ -3827,7 +3827,7 @@ nav ul.meu-primary {
 .banner-wrap figure::before {
   position: absolute;
   content: "";
-  background-image: url(/assets/images/shapes/banner-before.png);
+  background-image: url(./assets/images/shapes/banner-before.png);
   background-size: cover;
   width: 757px;
   height: 762px;
@@ -3922,7 +3922,7 @@ nav ul.meu-primary {
 .banner-wrap figure::after {
   position: absolute;
   content: "";
-  background-image: url(/assets/images/shapes/banner-after.png);
+  background-image: url(./assets/images/shapes/banner-after.png);
   background-size: cover;
   width: 274px;
   height: 597px;
