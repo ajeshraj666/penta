@@ -83,7 +83,7 @@ body{
 			line-height: 40px;
 			text-align: center;
 			background-color: $primaryColor;
-			background-image: url(/assets/images/vector/btn-bg.png);
+			background-image: url(./assets/images/vector/btn-bg.png);
 			background-size: cover;
 			color: $white;
 			padding: 24px 69px 33px 105px;
@@ -255,7 +255,7 @@ body{
 .clients{
 	margin-top: 150px;
 	background-color: $darkBlueColor;
-	background-image: url(/assets/images/vector/client.png);
+	background-image: url(./assets/images/vector/client.png);
 	position: relative;
 	@include max(991){
 		margin-top:50px;
@@ -519,7 +519,7 @@ body{
 	
 	&::after{
 		@extend .positionbefor;
-		background-image: url(/assets/images/shapes/countershape.svg);
+		background-image: url(./assets/images/shapes/countershape.svg);
 		background-size: cover;
 		width: 313.07px;
 		height: 300px;
@@ -749,7 +749,7 @@ body{
 	&::before{
 		@extend .positionbefor;
 		width: 990.98px; height: 1011.67px;
-		background-image: url(/assets/images/shapes/case.svg);
+		background-image: url(./assets/images/shapes/case.svg);
 		background-size: cover;
 		top: 0;
 		z-index: 0;
