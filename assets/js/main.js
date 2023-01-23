@@ -190,7 +190,9 @@ $('.service-slider').slick({
        breakpoint: 768,
        settings: {
          slidesToShow: 1,
-         slidesToScroll: 1
+         slidesToScroll: 1,
+         centerMode:false,
+    variableWidth:false,
        }
      }
      ],

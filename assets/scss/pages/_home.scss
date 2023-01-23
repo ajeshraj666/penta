@@ -17,6 +17,10 @@ body{
 		padding: 180px 0px 0px 0px;
 
 	}
+	@include max(767){
+		padding: 0px 0px 0px 0px;
+
+	}
 		.container >.row{
 			@include max(767){
 				flex-direction: column-reverse;
@@ -170,7 +174,7 @@ body{
 	}
 	@include max(767){
 		width: 100%;
-		margin: 290px 0px 30px 0px;
+		margin: 30px 0px 30px 0px;
 	}
 	h2{
 		line-height: 40px;
@@ -185,6 +189,10 @@ body{
 		line-height: 40px;
 		color: $btnColor;
 		padding-bottom: 10px;
+		@include max(767){
+			font-size: 20px;
+    		line-height: 30px;
+		}
 	}
 	article{
 		background: #F9F9F9;
@@ -237,6 +245,8 @@ body{
 		}
 		@include max(767){
 			padding: 20px 0px 20px 0px;
+			font-size:18px;
+		line-height: 30px;
 		}
 		
 	}
@@ -746,6 +756,9 @@ body{
 	color: $white;
 	margin-top: 150px;
 	position: relative;
+	@include max(767){
+		margin-top: 60px;
+	}
 	&::before{
 		@extend .positionbefor;
 		width: 990.98px; height: 1011.67px;
@@ -757,11 +770,20 @@ body{
 			width: 890.98px;
 			height: 911.67px;
 		}
+		@include max(768){
+			width: 100%;
+			height: 784px;
+		}
+		@include max(767){
+			width: 100%;
+			height: 398px;
+		}
 	}
 	.row >{
 		div{
 			text-align: center;
 			padding-bottom: 72px;
+			z-index: 1;
 		}
 	}
 	h2{
@@ -812,6 +834,10 @@ body{
 }
 .case-slider{
 	width: 84%;
+	@include max(767){
+		margin: auto;
+		width: 90%;
+	}
 	.slick-dots{
 		bottom: 0;
 		left: -70px;
@@ -822,6 +848,15 @@ body{
 			left: -23%;
 			z-index: -1;
 			transition: 0.5s ease all;
+			@include max(1440){
+				transform: scale(0.6);
+				left: -42%;
+			}
+			@include max(767){
+				transform: scale(1);
+				left: 0;
+			}
+				
 			&:after {
 				background-color: #ffffff91;
 				position: absolute;
@@ -845,6 +880,14 @@ body{
 			z-index: 1;
 			transition: 0.5s ease all;
 			left: -16px;
+			@include max(1440){
+				transform: scale(0.7);
+			}
+			@include max(767){
+				transform: scale(1);
+				left: 0;
+				
+			}
 			&::after{
 				background: unset;
 				position: initial;
@@ -855,6 +898,12 @@ body{
 			z-index: 1;
 			position: relative;
 			filter: grayscale(0);
+			@include max(767){
+				width: 100%;
+				object-fit: cover;
+				border-radius: 20px;
+				left: 0;
+			}
 		}
 	}
 	figure{

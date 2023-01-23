@@ -88,6 +88,7 @@
 		background-repeat: no-repeat;
 		background-position: 50% 0;
 		background-size: cover;
+		border-radius: 20px;
 	}
 	.row{
 		@include max(1199){
@@ -323,10 +324,11 @@
 		border-radius: 20px;
 	}
 	@include max(767){
-		width: 80%;
-		top: 94%;
+		width: 99%;
 		z-index: 4;
-		padding: 20px 0px;
+		position: unset;
+		padding: 0px 0px;
+		transform: translateX(0);
 	}
 	&:before{
 		content: ' ';
@@ -377,7 +379,7 @@
 			width: 150px;
 		}
 		@include max(767){
-			width: 75%;
+			width: 100%;
 
 		}
 		
@@ -398,8 +400,8 @@
 				height: 50px;
 			}
 			@include max(767){
-				width: 90px;
-				height: 90px;
+				width: 60px;
+				height: 60px;
 				right: 20%;
 			}
 		}
@@ -408,7 +410,7 @@
 				width: 30%;
 			}
 			@include max(767){
-				width: 24%;
+				width: 31%;
 			}
 		}
 		
@@ -469,11 +471,16 @@
 				top: 41%;
 			}
 			@include max(767){
-				right: -56px;
-				top: 44%;
+				right: -93px;
+				top: 43%;
+				font-size: 13px;
+				width: 154px;
 			}
 			img{
 				transform: rotate(90deg);
+				@include max(767){
+
+				}
 			}
 		}
 		p{
@@ -489,6 +496,12 @@
 				margin: auto;
 				z-index: 2;
 				position: relative;
+				font-size: 13px;
+   				 line-height: 26px;
+			}
+			@include max(360){
+				font-size: 12px;
+				line-height: 24px;
 			}
 		}
 		&:hover {
@@ -525,5 +538,15 @@
 			}
 		}
 	}
-	
+	.row > div{ 
+		&:nth-child(2) article span, &:nth-child(3) article span{
+			@include max(767){
+				right: auto;
+			left: -87%;
+			}
+			@include max(360){
+			left: -97%;
+			}
+		}
+	}
 }
