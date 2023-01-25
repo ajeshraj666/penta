@@ -3,6 +3,7 @@ body{
 	font-weight:$fw-500;
 	font-size: 20px;
 	line-height: 40px;
+	overflow-x: hidden;
 }
 
 
@@ -10,9 +11,13 @@ body{
 .about-penta{
 	padding: 260px 0px 0px 0px;
 	position: relative;
+	
 	@include max(1600){
 	padding: 160px 0px 0px 15px;
 	}
+	@include max(1500){
+		padding: 210px 0px 0px 15px;
+		}
 	@include max(991){
 		padding: 180px 0px 0px 0px;
 
@@ -464,7 +469,7 @@ body{
 		width: 100%;
 		@include max(767){
 			top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -53%);
 		}
 	}
 	.row >{
@@ -756,8 +761,14 @@ body{
 	color: $white;
 	margin-top: 150px;
 	position: relative;
+	background-image: url(./assets/images/vector/case.png);
+	background-blend-mode: overlay;
+	@include max(1600){
+		padding: 80px 0px 60px 0px;
+	}
 	@include max(767){
 		margin-top: 60px;
+		padding: 30px 0px 30px 0px;
 	}
 	&::before{
 		@extend .positionbefor;
@@ -770,13 +781,30 @@ body{
 			width: 890.98px;
 			height: 911.67px;
 		}
+		@include max(1599){
+			width: 814.98px;
+			height: 831.67px;
+		}
+		@include max(1399){
+			width: 754.98px;
+		    height: 771.67px;
+
+		}
+		@include max(1199){
+			width: 574.98px;
+			height: 586.67px;
+		}
 		@include max(768){
-			width: 100%;
-			height: 784px;
+			width: 670px;
+    		height: 684px;
 		}
 		@include max(767){
 			width: 100%;
 			height: 398px;
+		}
+		@include max(481){
+			width: 302px;
+			height: 308px;
 		}
 	}
 	.row >{
@@ -784,10 +812,19 @@ body{
 			text-align: center;
 			padding-bottom: 72px;
 			z-index: 1;
+			@include max(1024){
+				padding-bottom: 40px;
+			}
+			@include max(991){
+				padding-bottom: 0px;
+			}
 		}
 	}
 	h2{
 		text-transform: uppercase;
+		@include max(481){
+			margin-bottom: 20px;
+		}
 	}
 	.slick-dots li button:before{
 		background-color: $primaryColor;
@@ -800,26 +837,53 @@ body{
 	text-align: left;
 	z-index: 2;
 	position: relative;
+	@include max(991){
+		margin-top: 30px;
+	}
 	p{
 		span{
 			font-size: 24px;
 			line-height: 40px;
 			padding-bottom: 20px;
 			display: block;
+			@include max(481){
+				font-size: 20px;
+				text-align: center;
+			}
 		}
 		&.discription{
 			font-size: 20px;
 			line-height: 40px;
 			padding-top: 20px;
 			color: #CCCCCC;
+			@include max(481){
+				@include fontSize(16px);
+				line-height:32px;
+			
+			}
 		}
 	}
 	ul{
 		li{
 			font-size: 20px;
 			line-height: 40px;
+			@include max(481){
+				@include fontSize(16px)
+			}
+			@include max(1199){
+				display: flex;
+				align-items: center;
+			}
 			img{
 				padding-right: 38px;
+				display: initial;
+
+				@include max(1199){
+					padding-right: 18px;
+				}
+				@include max(481){
+					width: 13%;
+				}
 			}
 			&:first-child{
 				padding-bottom: 15px;
@@ -830,10 +894,26 @@ body{
 	&> a{display: block;}
 	.btnpenta{
 		margin-top: 104px;
+		@include max(1199){
+			margin-top: 10px;
+		}
+		@include max(481){
+			margin-top: 20px;
+		}
 	}
 }
 .case-slider{
 	width: 84%;
+	@include max(1600){
+		margin: auto;
+		width: 86%;
+	}
+	@include max(1499){
+		width: 90%;
+	}
+	@include max(991){
+		width: 100%;
+	}
 	@include max(767){
 		margin: auto;
 		width: 90%;
@@ -841,6 +921,9 @@ body{
 	.slick-dots{
 		bottom: 0;
 		left: -70px;
+		@include max(991){
+			left: 0;
+		}
 	}
 	.slick-slide {
 		figure{
@@ -856,6 +939,7 @@ body{
 				transform: scale(1);
 				left: 0;
 			}
+		
 				
 			&:after {
 				background-color: #ffffff91;
@@ -867,12 +951,21 @@ body{
 				left: -80%;
 				z-index: 9;
 				border-radius: 30px;
+				@include max(481){
+					background: unset;
+					position: initial;
+				}
 			}
 		}
 		img{
 			left: -80%;
 			filter: grayscale(100);
+			@include max(481){
+				left: 0;
+				filter: initial;
+			}
 		}
+		
 	}
 	.slick-slide.slick-current {
 		figure{
@@ -898,6 +991,9 @@ body{
 			z-index: 1;
 			position: relative;
 			filter: grayscale(0);
+			@include max(1199){
+				left: 0%;
+			}
 			@include max(767){
 				width: 100%;
 				object-fit: cover;
@@ -915,8 +1011,432 @@ body{
 			height: 580px;
 			padding: 15px;
 			background-color: $white;
-
+			@include max(1499){
+				width: 669px;
+				height: 640px;
+			}
+			@include max(1199){
+				width: 599px;
+    			height: 560px;
+			}
+			@include max(767){
+				border-radius: 20px;
+			}
+			@include max(481){
+    			height: 314px;
+				object-fit: cover;
+			}
 		}
 
+	}
+	.slick-next {
+		@include max(991){
+			right: 0;
+		}
+	}
+	.slick-prev, .slick-next{
+		@include max(991){
+			top: 88%;
+		}
+	}
+}
+
+
+.portfolio{
+	padding:150px 0px 60px 0px;
+	@include max(1600){
+		padding:80px 0px 60px 0px;
+
+	}
+	@include max(767){
+		padding: 30px 0px 30px 0px;
+	}
+	h2,span{
+		text-align: center;
+	}
+	h2{
+		padding-bottom: 0px;
+	}
+	
+	.filter { 
+		text-align: center; 
+		margin:  auto;
+		padding: 25px 0px;
+		a{
+			padding-right: 45px;
+			font-size: 24px;
+			color: $greyColorDark;
+			@include max(1199){
+				padding-right: 20px;
+			}
+			@include max(991){
+				padding-right: 13px;
+    			font-size: 16px;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+  
+  .filter a.current { color: $primaryColor; }
+	figure img{
+		border: 1px solid #C4C4C4;
+			border-radius: 30px;
+			filter: grayscale(100);
+			transition: 0.5s ease-in-out;
+
+	}
+	figure:hover{
+		cursor: pointer;
+		img{
+			filter: grayscale(0);
+			transition: 0.5s ease-in-out;
+		}
+	}
+	.box{
+		@include min(1024){
+			padding: 0px 6px;
+		}
+	}
+	.boxGroup {
+		.col-12{
+			text-align: center;
+		}
+		.btnpenta{
+			margin: 40px 0px 0px 0px;
+			@include max(767){
+				margin: 20px 0px 0px 0px;
+
+			}
+		}
+	}
+}
+
+.testimonial{
+	background-color: $primaryColor;
+	padding: 147px 0px 470px 0px;
+	position: relative;
+	overflow: hidden;
+	@include max(1700){
+		padding: 80px 0px 450px 0px;
+	}
+	@include max(1599){
+		padding: 77px 0px 370px 0px;
+	}
+	@include max(1199){
+		padding: 50px 0px 50px 0px;
+	}
+	&::before{
+		@extend .positionbefor;
+		background-size: cover;
+		width: 700.6px;
+		height: 899.54px;
+		top: 0;
+		right: 0;
+		background-image: url(./assets/images/shapes/testimonial.svg);
+		@include max(1600){
+			width: 530.6px;
+    		height: 729.54px;
+		}
+		@include max(1399){
+			width: 480.6px;
+    		height: 679.54px;
+		}
+	}
+	h2{
+		color: $white;
+		padding-bottom: 70px;
+		@include max(767){
+			padding-bottom: 30px;
+		}
+	}
+	.container{
+		position: relative;
+	}
+}
+.testimoalSlider {
+
+	color: $white;
+	.slick-dots{
+		margin-top: 40px;
+	}
+	.slick-dots li.slick-active button:before{
+		background-color: $white;
+	}
+	.profileDetails,.review{
+		text-align: left;
+	}
+	.profileDetails{
+		.title{
+			font-weight: 400;
+			font-size: 30px;
+			line-height: 60px;
+			margin-bottom: 10px;
+			@include max(768){
+				font-size: 25px;
+				line-height: 50px;
+				margin-bottom: 0;
+			}
+		}
+		span{
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 0.3em;
+			color: $secondaryColor;
+			margin-bottom: 25px;
+			display: block;
+			font-weight: 400;
+		}
+		img{
+			padding-bottom: 40px;
+			position: relative;
+			
+		}
+		.rating{
+			display: flex;
+			align-items: center;
+			ul{
+				display: flex;
+				padding-left: 40px;
+				li{
+					padding-right: 5px;
+					&:last-child{
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+	.review{
+		width: 600px;
+
+		p{
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 40px;
+			color: #F1F1F1;
+			max-height: 170px;
+			overflow-y: auto;
+			@include max(1499){
+				padding: 0px 10px;
+			}
+			@include min-max(768,1023){
+				max-height: 240px;
+			}
+			@include max(767){
+				font-size: 18px;
+				line-height: 36px;
+				max-height: 190px;
+			}
+		}
+	}
+	
+	article{
+		display: flex!important;
+		flex-wrap: wrap;
+		justify-content: center;
+	
+		figure {
+			width: 76px;
+			height: 76px;
+			background-color: $secondaryColor;
+			border-radius: 50px;
+			padding: 18px  23px;
+			margin: 17px 40px 0px 0px;
+			flex-basis: 76px;
+			@include max(768){
+				margin: 17px 10px 0px 0px;
+			}
+		}
+		.profileDetails {
+			flex-basis: 61%;
+			@include max(768){
+				flex-basis: 75%;
+			}
+		}
+	}
+	::-webkit-scrollbar-button       {height: 20px;  }
+
+}
+
+
+.ourNews{
+
+	.col-lg-3 {
+		@include min-max(1024,1199){
+			width: 49.5%;
+
+		}
+		@include max(1199){
+			margin-bottom: 30px;
+		}
+	}
+	@include max(1199){
+		padding: 50px 0px;
+	}
+	position: relative;
+	
+	@include min(1300){
+		margin-top: -25.5%;
+	}
+	@include min(1601){
+		margin-top: -19.5%;
+	}
+	h2{
+		color: $white;
+		padding-bottom: 60px;
+		@include max(1199){
+			color: $black;
+		}
+		@include max(767){
+			padding-bottom: 20px;
+		}
+	}
+	.row{
+		justify-content: space-between;
+		@include min-max(1600,1699){
+			justify-content: center;
+		}
+	}
+	.col-lg-3{
+	
+		@include min(1601){
+			width: 350px;
+		flex-basis: 350px;
+		max-width: 350px;
+		padding: 0 10px 0px 0px ;
+		}
+	}
+	article{
+		background-color: $white;
+		border: 1px solid #EEEEEE;
+		border-radius: 30px;
+		height: 439px;
+		padding: 15px;
+		transition: 0.5s ease-out;
+		@include max(1499){
+			height: 400px;
+		}
+		@include max(1199){
+			height: 100%;
+		}
+		@include min(1499){
+			padding: 25px 31px 15px 31px;
+		}
+		@include min(1601){
+			padding: 20px 18px 15px 18px;
+		}
+
+		&:hover{
+			box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.1);
+			transition: 0.5s ease-in;
+		}
+		img{
+			width: 305px;
+			height: auto;
+			object-fit: cover;
+			@include max(1199){
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+			}
+		}
+		figure{
+			text-align: center;
+		}
+		.pushlishDetails{
+			display: flex;
+			width: 100%;
+			padding-top: 10px;
+			align-items: center;
+			padding-bottom: 25px;
+		}
+		.date{
+			font-size: 18px;
+			line-height: 25px;
+			padding: 7px 18px;
+			background-color: $primaryColor;
+			border-radius: 10px;
+			color: $white;
+			margin: 0;
+			@include max(1499){
+				font-size: 15px;
+				line-height: 20px;
+				padding: 5px 15px;
+			}
+		}
+		.time{
+			font-size: 18px;
+			line-height: 25px;
+			color: #676767;
+			flex-basis: 60%;
+			text-align: right;
+			font-weight: 400;
+			@include max(1499){
+				font-size: 15px;
+			}
+		}
+		h3{
+			font-weight: 400;
+			@include fontSize(20px);
+			line-height: 30px;
+			padding-bottom: 25px;
+			@include max(1499){
+				@include fontSize(16px);
+			}
+			@include max(767){
+				padding-bottom: 0;
+
+			}
+		}
+		.newsBtn{
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 0.3em;
+			text-transform: uppercase;
+			color: $primaryColor;
+			width: 100%;
+			position: relative;
+			@include max(1599){
+				font-size: 14px;
+			}
+			&::after{
+				@extend .positionbefor;
+				background-size: cover;
+				right: 30%;
+				bottom: 0;
+				width: 40px;
+				height: 8px;
+				transition: 0.5s all;
+				background-image: url(./assets/images/icons/rightArrow.svg);
+				@include max(1499){
+					right: 25%;
+				}
+			}
+			&:hover {
+				&::after{
+					right: 0;
+					transition: 0.5s all;
+				}
+			}
+		}
+		.cnt{
+			margin: 0 0 10px 0;
+			color: #999999;
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: 400;
+			@include max(1599){
+				font-size: 14px;
+			}
+		}
+		.description{
+			max-height: 120px;
+			overflow: hidden;
+			@include max(1199){
+				max-height: 90px;
+			}
+		}
 	}
 }

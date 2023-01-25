@@ -172,11 +172,12 @@ $('.service-slider').slick({
   $('.case-slider').slick({
     slidesToShow:1,
     slideToScroll: 1,
-    autoplay:false,
+    autoplay:true,
     centerMode:true,
     variableWidth:true,
     dots: true,
     arrows: true,
+    asNavFor: '.slider-nav',
     responsive: [
      {
        breakpoint: 1200,
@@ -196,9 +197,135 @@ $('.service-slider').slick({
        }
      }
      ],
+
+
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 1,
+    arrows: false,
+    slidesToScroll: 1,
+    asNavFor: '.case-slider',
+    focusOnSelect: true
   });
 
 
+  //Filter
+  $(function() {
+    
+    var $filter = $('.filter');
+    var $tab = $('.filter a');
+    var $offers = $('.boxGroup .box')
+    
+    
+    
+    $filter.on('click touch', '.all',  function(e) {
+      e.preventDefault();
+      $tab.removeClass('current');
+      $(this).addClass('current');
+      
+      $offers.hide();
+      $offers.fadeIn( 700 );
+      
+    });
+    
+    
+    $filter.on('click touch', '.webDevelopment',  function(e) {
+      e.preventDefault();
+      $tab.removeClass('current');
+      $(this).addClass('current');
+      
+      $offers.show();
+      $offers.fadeOut( 400 );
+      $offers.filter('.webDevelopment').fadeIn( 400 );
+    
+    });
+    
+    
+    
+    $filter.on('click touch', '.ecommerce',  function(e) {
+      e.preventDefault();
+      $tab.removeClass('current');
+      $(this).addClass('current');
+      
+      $offers.show();
+      $offers.fadeOut( 400 );
+      $offers.filter('.ecommerce').fadeIn( 400 );
+     
+    });
+    
+    
+    
+    $filter.on('click touch', '.marketingCollateral',  function(e) {
+      e.preventDefault();
+      $tab.removeClass('current');
+      $(this).addClass('current');
+      
+      $offers.show();
+      $offers.fadeOut( 400 );
+      $offers.filter('.marketingCollateral').fadeIn( 400 );
+     
+    });
+
+    $filter.on('click touch', '.webApplication',  function(e) {
+      e.preventDefault();
+      $tab.removeClass('current');
+      $(this).addClass('current');
+      
+      $offers.show();
+      $offers.fadeOut( 400 );
+      $offers.filter('.webApplication').fadeIn( 400 );
+     
+    });
+
+    $filter.on('click touch', '.seo',  function(e) {
+      e.preventDefault();
+      $tab.removeClass('current');
+      $(this).addClass('current');
+      
+      $offers.show();
+      $offers.fadeOut( 400 );
+      $offers.filter('.seo').fadeIn( 400 );
+     
+    });
+    
+    
+  });
+  
+
+  //Testimonial Slider
+  $('.testimoalSlider').slick({
+    slidesToShow:2,
+    slideToScroll: 1,
+    autoplay:false,
+    dots: true,
+    arrows: false,
+    responsive: [
+     {
+       breakpoint: 1200,
+       settings: {
+         slidesToShow: 2,
+         slidesToScroll: 1,
+         
+       }
+     },
+     {
+       breakpoint: 768,
+       settings: {
+         slidesToShow: 2,
+         slidesToScroll: 1,
+       }
+     },
+     {
+       breakpoint: 767,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+       }
+     }
+     ],
+
+
+  });
 
 
 //Modal

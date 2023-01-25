@@ -673,3 +673,27 @@ picture {
     padding-right: 20px !important;
   }
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 50px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 5px;
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $secondaryColor; 
+    border-radius: 5px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #25554a; 
+  }

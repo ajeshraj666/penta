@@ -1,0 +1,202 @@
+.footerspace{
+    height: 657px;
+}
+footer{
+    background-color: $darkBlueColor;
+    color: $footerColor;
+    padding-top: 390px;
+    position: relative;
+    &> .container{
+        @include min(1600){
+            max-width: 1363px!important;
+        }
+    }
+    .menu li a{
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 5px;
+        color: $white;
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+    .menu p{
+        font-size: 24px;
+        line-height: 29px;
+        color: $secondaryColor;
+    }
+    .footerLogoSection{
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    ul.countries{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        figure{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            margin-right: 10px;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            padding-right: 100px;
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 24px;
+            color: $white;
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}
+.copyright{
+    margin-top: 100px;
+    padding: 30px 0px;
+    border-top:1px solid rgb(255 255 255 / 20%) ;
+    .socialLinks,.copyText{
+        flex-basis: 50%;
+        max-width: 50%;
+
+    }
+    .copyText{
+        text-align: right;
+    }
+    .socialLinks ul{
+        display: flex;
+        align-items: center;
+        li{
+            margin-right: 20px;
+            width: 33px;
+                height: 33px;
+                border: 1px solid $white;
+                border-radius: 33px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px;
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .copyText{
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+}
+
+
+.contactForm{
+    background-color: $btnColor;
+    padding: 60px 104px;
+    border-radius: 30px;
+    text-align: left;
+    position: absolute;
+    width: 70%;
+    margin: auto;
+    top: -18%;
+    .container > .row{
+        justify-content: space-between;
+    }
+    span{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+        display: block;
+
+    }
+    .head{
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 37px;
+        color: $white;
+    }
+    .title{
+        font-weight: 500;
+font-size: 30px;
+line-height: 37px;
+color: $white;
+margin-bottom: 0;
+flex-basis: 100%;
+padding-top: 15px;
+
+    }.designation{
+        font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+color: $white;
+flex-basis: 100%;
+
+    }
+   .communication{
+    img{
+        width: 98px;
+    object-fit: cover;
+height: 98px;
+border: 1px solid $secondaryColor;
+border-radius: 20px;
+    }
+.contactTel {
+font-size: 20px;
+line-height: 24px;
+p{
+
+color: $secondaryColor;
+}
+a{
+    color: $white;
+    font-weight: 400;
+}
+
+}
+   }
+
+}
+.input-holder input ,.input-holder textarea{
+    width: 100%;
+    background-color: unset;
+    border: unset;
+    outline: unset;
+   border-bottom: 1px solid $white;
+   color: $white;
+   font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+}
+.input-holder textarea{
+    padding: 0;
+    height: 25px;
+    
+}
+.input-holder {
+    height: 60px;
+}
+::placeholder{
+    color: $white;
+    font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+}
+button{
+    background: $primaryColorLight;
+border: 1px solid $primaryBorderColor;
+border-radius: 20px;
+padding: 15px 30px;
+font-size: 20px;
+line-height: 40px;
+font-weight: 500;
+color: $white;
+}
