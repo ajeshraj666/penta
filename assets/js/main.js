@@ -380,4 +380,10 @@ $('.counter-count').each(function () {
 });
 
 
+//aos
+AOS.init();
 
+AOS.init({
+disable: window.innerWidth < 768});
+AOS.init({ once: 'true'
+	});
