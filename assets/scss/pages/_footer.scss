@@ -205,8 +205,10 @@ footer{
         }
      }
     .copyText{
-        flex-basis: 55%;
+        @include max(767){
+            flex-basis: 55%;
             max-width: 55%;
+        }
     }
     .socialLinks ul{
         display: flex;
