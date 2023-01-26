@@ -2798,6 +2798,212 @@ picture:after {
     transform: none !important;
   }
 }
+@-webkit-keyframes circleTrust {
+  0% {
+    left: 70%;
+    top: 5%;
+  }
+  10% {
+    left: 50%;
+    top: 5%;
+  }
+  50% {
+    left: 0%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  100% {
+    left: 70%;
+    top: 5%;
+  }
+}
+@keyframes circleTrust {
+  0% {
+    left: 70%;
+    top: 5%;
+  }
+  10% {
+    left: 50%;
+    top: 5%;
+  }
+  50% {
+    left: 0%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  100% {
+    left: 70%;
+    top: 5%;
+  }
+}
+@media (max-width: 1440px) {
+  @-webkit-keyframes circleTrust {
+    0% {
+      left: 50%;
+      top: 5%;
+    }
+    10% {
+      left: 40%;
+      top: 5%;
+    }
+    50% {
+      left: 10%;
+      top: 5%;
+      width: 60px;
+      height: 60px;
+    }
+    100% {
+      left: 50%;
+      top: 5%;
+    }
+  }
+  @keyframes circleTrust {
+    0% {
+      left: 50%;
+      top: 5%;
+    }
+    10% {
+      left: 40%;
+      top: 5%;
+    }
+    50% {
+      left: 10%;
+      top: 5%;
+      width: 60px;
+      height: 60px;
+    }
+    100% {
+      left: 50%;
+      top: 5%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  @-webkit-keyframes circleTrust {
+    0% {
+      left: 40%;
+      top: 10%;
+    }
+    10% {
+      left: 25%;
+      top: 10%;
+    }
+    50% {
+      left: 0%;
+      top: 10%;
+      width: 50px;
+      height: 50px;
+    }
+    100% {
+      left: 40%;
+      top: 10%;
+    }
+  }
+  @keyframes circleTrust {
+    0% {
+      left: 40%;
+      top: 10%;
+    }
+    10% {
+      left: 25%;
+      top: 10%;
+    }
+    50% {
+      left: 0%;
+      top: 10%;
+      width: 50px;
+      height: 50px;
+    }
+    100% {
+      left: 40%;
+      top: 10%;
+    }
+  }
+}
+@-webkit-keyframes circle {
+  0% {
+    left: 70%;
+    top: 5%;
+  }
+  10% {
+    left: 50%;
+    top: 5%;
+  }
+  50% {
+    left: 0%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  100% {
+    left: 70%;
+    top: 5%;
+  }
+}
+@keyframes circle {
+  0% {
+    left: 70%;
+    top: 5%;
+  }
+  10% {
+    left: 50%;
+    top: 5%;
+  }
+  50% {
+    left: 0%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  100% {
+    left: 70%;
+    top: 5%;
+  }
+}
+@media (max-width: 1024px) {
+  @-webkit-keyframes circle {
+    0% {
+      left: 50%;
+      top: 10%;
+    }
+    10% {
+      left: 25%;
+      top: 10%;
+    }
+    50% {
+      left: 0%;
+      top: 10%;
+      width: 50px;
+      height: 50px;
+    }
+    100% {
+      left: 50%;
+      top: 10%;
+    }
+  }
+  @keyframes circle {
+    0% {
+      left: 50%;
+      top: 10%;
+    }
+    10% {
+      left: 25%;
+      top: 10%;
+    }
+    50% {
+      left: 0%;
+      top: 10%;
+      width: 50px;
+      height: 50px;
+    }
+    100% {
+      left: 50%;
+      top: 10%;
+    }
+  }
+}
 .curP {
   cursor: pointer;
 }
@@ -4159,6 +4365,11 @@ nav ul.meu-primary {
   background-position: 50% 0;
   background-size: cover;
 }
+@media (max-width: 767px) {
+  .main-services .row > div:first-child article p {
+    line-height: 19px;
+  }
+}
 .main-services .row {
   justify-content: center;
   height: 309px;
@@ -4202,6 +4413,11 @@ nav ul.meu-primary {
 @media (max-width: 767px) {
   .main-services .service-wrapper {
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .main-services .service-wrapper .row > div:first-child article p {
+    line-height: 19px;
   }
 }
 .main-services .service-wrapper::after {
@@ -4630,6 +4846,8 @@ body {
   z-index: -1;
   top: 24px;
   right: 62px;
+  -webkit-animation: circleTrust 13s linear infinite !important;
+          animation: circleTrust 13s linear infinite !important;
 }
 @media (max-width: 1600px) {
   .about-penta ul.about-list p {
@@ -4776,6 +4994,13 @@ body {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 1199px) {
+  .about-content article {
+    line-height: 26px;
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
+  }
+}
 .about-content article::after {
   background-color: #C0DED7;
   top: 14px;
@@ -4837,6 +5062,8 @@ body {
   height: 100px;
   border-radius: 100px;
   content: "";
+  -webkit-animation: circle 13s linear infinite;
+          animation: circle 13s linear infinite;
   position: absolute;
 }
 @media (max-width: 767px) {

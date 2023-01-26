@@ -361,7 +361,11 @@
 		background-position: 50% 0;
 		background-size: cover;
 	}
-
+	.row > div:first-child article p {
+		@include max(767){
+		line-height: 19px;
+		}
+	}
 	.row{
 		justify-content: center;
 		height: 309px;
@@ -399,7 +403,11 @@
 			width: 100%;
 
 		}
-		
+		.row > div:first-child article p {
+			@include max(767){
+			line-height: 19px;
+		}
+	}
 		
 		
 		&::after{

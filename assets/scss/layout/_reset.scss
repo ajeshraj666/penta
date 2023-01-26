@@ -710,4 +710,111 @@ picture {
       transform: none !important;
     }
   }
-     
+
+  @keyframes circleTrust {
+    0% {
+      left: 70%;
+      top: 5%;
+    }
+    10% {
+      left: 50%;
+      top: 5%;
+    }
+    50% {
+      left: 0%;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+    }
+    100% {
+      left: 70%;
+            top: 5%;
+    }
+  }
+  @media(max-width:1440px){
+    @keyframes circleTrust {
+      0% {
+        left: 50%;
+        top: 5%;
+      }
+      10% {
+        left: 40%;
+        top: 5%;
+      }
+      50% {
+        left: 10%;
+        top: 5%;
+        width: 60px;
+        height: 60px;
+      }
+      100% {
+        left: 50%;
+              top: 5%;
+      }
+    }
+  }
+  @media(max-width:768px){
+    @keyframes circleTrust {
+      0% {
+        left: 40%;
+        top: 10%;
+      }
+      10% {
+        left: 25%;
+        top: 10%;
+      }
+      50% {
+        left: 0%;
+        top: 10%;
+        width: 50px;
+        height: 50px;
+      }
+      100% {
+        left:40%;
+              top: 10%;
+      }
+    }
+  }
+  @keyframes circle {
+    0% {
+      left: 70%;
+      top: 5%;
+    }
+    10% {
+      left: 50%;
+      top: 5%;
+    }
+    50% {
+      left: 0%;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+    }
+    100% {
+      left: 70%;
+            top: 5%;
+    }
+  }
+  @media(max-width:1024px){
+    @keyframes circle {
+      0% {
+        left: 50%;
+        top: 10%;
+      }
+      10% {
+        left: 25%;
+        top: 10%;
+      }
+      50% {
+        left: 0%;
+        top: 10%;
+        width: 50px;
+        height: 50px;
+      }
+      100% {
+        left:50%;
+              top: 10%;
+      }
+    }
+  }
+ 
