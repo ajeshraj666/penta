@@ -2,7 +2,7 @@
     height: 380px;
     position: relative;
     &::before{
-        background-image: url(/assets/images/vector/form.png);
+        background-image: url(./assets/images/vector/form.png);
     background-size: cover;
     @extend .positionbefor;
     width: 100%;
@@ -107,7 +107,7 @@ footer{
                 position: relative;
                 padding-left: 30px;
                 &::before{
-                background-image: url(/assets/images/about.png);
+                background-image: url(./assets/images/about.png);
                 background-size: cover;
                 @extend .positionbefor;
                 width: 15px;
@@ -256,7 +256,7 @@ footer{
     top: -60%;
     transform: translateY(-50%);
     &::before{
-        background-image: url(/assets/images/shapes/form.svg);
+        background-image: url(./assets/images/shapes/form.svg);
         @extend .positionbefor;
         left: 0;
         top: 0;

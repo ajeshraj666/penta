@@ -6490,7 +6490,7 @@ body {
   position: relative;
 }
 .footerspace::before {
-  background-image: url(/assets/images/vector/form.png);
+  background-image: url(./assets/images/vector/form.png);
   background-size: cover;
   width: 100%;
   height: 690px;
@@ -6606,7 +6606,7 @@ footer .imageLogo a {
   padding-left: 30px;
 }
 footer .imageLogo a::before {
-  background-image: url(/assets/images/about.png);
+  background-image: url(./assets/images/about.png);
   background-size: cover;
   width: 15px;
   height: 15px;
@@ -6758,7 +6758,7 @@ footer .container {
   transform: translateY(-50%);
 }
 .contactForm::before {
-  background-image: url(/assets/images/shapes/form.svg);
+  background-image: url(./assets/images/shapes/form.svg);
   left: 0;
   top: 0;
   background-size: cover;
