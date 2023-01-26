@@ -5533,6 +5533,8 @@ body {
   }
 }
 .counter-wrap figure::before {
+  -webkit-animation: none;
+          animation: none;
   background-color: #4AAD97;
   z-index: 2;
 }

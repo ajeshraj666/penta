@@ -667,6 +667,7 @@ body{
 			}
 			&::before{
 				@extend .round;
+				animation: none;
 				background-color: $secondaryColor;
 				z-index: 2;
 				@include max(1499){
